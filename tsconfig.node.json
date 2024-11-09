@@ -2,7 +2,7 @@
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
     "target": "ES2022",
-    "lib": ["ES2023"],
+    "lib": ["dom", "esnext"],
     "module": "ESNext",
     "skipLibCheck": true,
 
@@ -24,6 +24,5 @@
     "entryPoints": ["src/**/*.ts"], // Указываем все файлы .ts внутри папки src
     "out": "docs"
   },
-  "include": ["src/**/*.ts","src/**/*.vue", "src/**/*.d.ts",]
+  "include": ["src/**/*.ts", "src/**/*.vue", "src/**/*.d.ts"]
 }
-

@@ -4,21 +4,23 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
-    parser: "@typescript-eslint/parser",
+    parser: '@typescript-eslint/parser',
     requireConfigFile: false,
   },
-  plugins: ['@typescript-eslint', 'vue'],
-  extends: [
-    'plugin:vue/vue3-essential',
-    'eslint:recommended',
-    'prettier',
-  ],
+  plugins: ['@typescript-eslint', 'plugin:@typescript-eslint/recommended', 'vue'],
+  extends: ['plugin:vue/vue3-essential', 'eslint:recommended', 'prettier'],
   rules: {
     'vue/require-default-prop': 'off',
     'vue/multi-word-component-names': 'off',
     'vue/max-attributes-per-line': 'off',
     'vue/block-order': ['error', { order: ['script', 'template', 'style'] }],
-    'vue/define-macros-order': ['error', { order: ['defineProps', 'defineEmits', 'defineModel', 'defineSlots'], defineExposeLast: false }],
+    'vue/define-macros-order': [
+      'error',
+      {
+        order: ['defineProps', 'defineEmits', 'defineModel', 'defineSlots'],
+        defineExposeLast: false,
+      },
+    ],
     'vue/no-useless-v-bind': 'error',
     'vue/no-unused-emit-declarations': 'error',
     'vue/prefer-separate-static-class': 'error',
@@ -26,12 +28,12 @@ module.exports = {
     'no-var': 'error',
     'prefer-arrow-callback': 'error',
     'prefer-template': 'error',
-    'eqeqeq': 'error',
+    eqeqeq: 'error',
     'no-unused-vars': 'error',
     'no-console': 'warn',
     'no-alert': 'error',
     'no-duplicate-imports': 'error',
     'no-return-await': 'error',
-    'curly': 'error',
+    curly: 'error',
   },
-};
+}
