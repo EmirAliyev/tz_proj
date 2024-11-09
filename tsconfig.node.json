@@ -20,5 +20,10 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["vite.config.ts"]
+  "typedocOptions": {
+    "entryPoints": ["src/**/*.ts"], // Указываем все файлы .ts внутри папки src
+    "out": "docs"
+  },
+  "include": ["src/**/*.ts","src/**/*.vue", "src/**/*.d.ts",]
 }
+

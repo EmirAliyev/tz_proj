@@ -10,7 +10,7 @@ export class UsersAPI extends HttpService {
    * Retrieves a list of users from the API.
    *
    * @param {Record<string, any>} params - Parameters for filtering or sorting the user data.
-   * @returns {Promise<IUser[]>} - Returns an array of `IUser` objects representing users.
+   * @returns {Promise<IUser[]>} - A promise that resolves to an array of `IUser` objects representing users.
    * @description
    * This method sends a request to the API and retrieves data in the `IUserResponse` format.
    * The API response includes an object with two fields:
