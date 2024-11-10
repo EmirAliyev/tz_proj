@@ -7,7 +7,10 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     requireConfigFile: false,
   },
-  plugins: ['@typescript-eslint', 'plugin:@typescript-eslint/recommended', 'vue'],
+  plugins: ['@typescript-eslint', 'vue'],
+  globals: {
+    RequestInit: true,
+  },
   extends: ['plugin:vue/vue3-essential', 'eslint:recommended', 'prettier'],
   rules: {
     'vue/require-default-prop': 'off',

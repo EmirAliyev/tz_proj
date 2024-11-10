@@ -1,9 +1,11 @@
 
 <script setup lang="ts">
-import type { IUser } from '../../api/users/types';
-const { user } = defineProps<{ user: IUser }>();
+import type { IUser } from '../../api/users/types'; // Import the IUser type for user data
 
+// Define props, expecting a user object of type IUser
+const { user } = defineProps<{ user: IUser }>(); 
 </script>
+
 <template>
   <div class="tw-mb-6 tw-rounded-lg tw-shadow-lg tw-p-6 tw-bg-color-light-cream">
     <div class="tw-flex tw-flex-col tw-items-center tw-mb-4">

@@ -1,6 +1,7 @@
+@use "reset" as *;
+@use "fonts" as *;
+@use "variables" as *;
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "reset";
-@import "fonts";
-@import "variables"
